@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: flex;
+      }
+
+      .content {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+      }
+
+      .form {
+        margin: auto;
+        margin-bottom: 20px;
+      }
+
+      .gift {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .itemImg {
+        width: 30%;
+        height: 250px;
+        margin: 0 10px 10px 0;
+        border: 1px solid #333;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="content">
+        <h2>GIPHY PARTY</h2>
+
+        <div class="form">
+          <input class="input" type="search" />
+          <button class="button">Search</button>
+          <button class="remove">Remove Image</button>
+        </div>
+
+        <div class="gift"></div>
+      </div>
+    </div>
+    <script src="./axios.js"></script>
+  </body>
+</html>
